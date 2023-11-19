@@ -1,23 +1,22 @@
-import { useState } from 'react'
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
 
-
-const App = (name, age, team=None) => {
-
+const App = ({ name, age, team = null }) => {
   const playinfo = {
-    name:"jokic",
-    age:28,
-    team:"nuggets"
-  }
-  const [count, setCount] = useState(0)
+    name: "Jokic",
+    age: 28,
+    team: "Nuggets"
+  };
+
+  const [count, setCount] = useState(0);
 
   return (
     <>
       <p>
-        `the player's Name: ${name} and the age is ${age} currently playing for ${team}`
+        The player's Name: {name || playinfo.name}, the age is {age || playinfo.age}, currently playing for {team || playinfo.team}.
       </p>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
