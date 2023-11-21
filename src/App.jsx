@@ -1,22 +1,15 @@
-import React, { useState } from 'react';
-import './App.css';
+import "./styles.css"
 
-const App = ({ name, age, team = null }) => {
-  const playinfo = {
-    name: "Jokic",
-    age: 28,
-    team: "Nuggets"
-  };
-
-  const [count, setCount] = useState(0);
-
+export default function App () {
   return (
-    <>
-      <p>
-        The player's Name: {name || playinfo.name}, the age is {age || playinfo.age}, currently playing for {team || playinfo.team}.
-      </p>
-    </>
-  );
-};
+    <div className="">
 
-export default App;
+      <form action="">
+        <label htmlFor=""></label>
+      
+      </form>
+
+
+    </div>
+  )
+}
